@@ -1,4 +1,4 @@
- -*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 """
 APP DE RADON PARA STREAMLIT - CON CLICK EN PLANO
 =================================================
