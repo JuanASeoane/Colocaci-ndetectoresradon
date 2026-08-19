@@ -1,6 +1,0 @@
-# Tema de la app: color principal en naranja en vez del rojo por
-# defecto de Streamlit. Afecta a los botones "type=primary" (Abrir,
-# Generar PDF, Guardar, Sí-eliminar...), casillas marcadas, y otros
-# acentos de la interfaz.
-[theme]
-primaryColor = "#F97316"
