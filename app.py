@@ -40,7 +40,14 @@ try:
 except ImportError:
     IMG_COORD_DISPONIBLE = False
 
-st.set_page_config(page_title="Detectores Rn", page_icon="☢️", layout="wide")
+# Favicon personalizado (favicon.png debe estar en la misma carpeta que
+# este script). Si por lo que sea no se encuentra, se usa el emoji de
+# radiactividad como respaldo para que la app no falle al arrancar.
+_carpeta_script = os.path.dirname(os.path.abspath(__file__))
+_ruta_favicon = os.path.join(_carpeta_script, "favicon.png")
+_icono_pagina = _ruta_favicon if os.path.exists(_ruta_favicon) else "☢️"
+
+st.set_page_config(page_title="Detectores Rn", page_icon=_icono_pagina, layout="wide")
 
 # Ajustes visuales generales: texto en negrita, títulos más pequeños,
 # texto pequeño (captions/etiquetas) más grande, botones destacados en
